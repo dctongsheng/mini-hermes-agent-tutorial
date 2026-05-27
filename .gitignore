@@ -9,3 +9,4 @@ docs/.vitepress/dist/
 examples/mini-hermes-agent/dist/
 examples/mini-hermes-agent/src/data/
 examples/mini-hermes-agent/data/
+start.sh

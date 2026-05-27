@@ -6,6 +6,8 @@
 
 配套 GitHub 仓库：[dctongsheng/mini-hermes-agent-tutorial](https://github.com/dctongsheng/mini-hermes-agent-tutorial)
 
+在线文档：[https://minihermes.hebox.one/](https://minihermes.hebox.one/)
+
 ## 你会学到什么
 
 - Agent Loop 如何把用户任务、LLM、工具调用和工具观测串起来。
