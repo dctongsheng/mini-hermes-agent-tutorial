@@ -1,10 +1,10 @@
 # 核心实现：从类型安全到可运行 Agent
 
-这一章按实现链路讲代码。建议你打开 `examples/mini-hermes-agent/src` 对照阅读。
+这一章按实现链路讲代码。建议你打开本地 `examples/mini-hermes-agent/src`，或者在 GitHub 中打开 [src 目录](https://github.com/dctongsheng/mini-hermes-agent-tutorial/tree/main/examples/mini-hermes-agent/src) 对照阅读。
 
 ## 1. 类型定义先行
 
-`shared/types.ts` 定义了消息、工具调用、工具 schema 和 Trace。TypeScript 在 Agent 项目里特别重要，因为消息历史一旦拼错，Provider 往往只会返回一个很远的 400 错误。
+[`shared/types.ts`](https://github.com/dctongsheng/mini-hermes-agent-tutorial/blob/main/examples/mini-hermes-agent/src/shared/types.ts) 定义了消息、工具调用、工具 schema 和 Trace。TypeScript 在 Agent 项目里特别重要，因为消息历史一旦拼错，Provider 往往只会返回一个很远的 400 错误。
 
 ```ts
 export interface ToolCall {
@@ -90,7 +90,7 @@ const prompt = await buildHermesStyleSystemPrompt({
 
 ## 6. Agent Loop
 
-`MiniHermesAgent.run()` 是整个项目最重要的函数：
+[`MiniHermesAgent.run()`](https://github.com/dctongsheng/mini-hermes-agent-tutorial/blob/main/examples/mini-hermes-agent/src/agent/MiniHermesAgent.ts) 是整个项目最重要的函数：
 
 ```ts
 for (let iteration = 0; iteration < this.maxIterations; iteration += 1) {
@@ -117,7 +117,7 @@ for (let iteration = 0; iteration < this.maxIterations; iteration += 1) {
 
 ## 测试如何保护核心行为
 
-测试文件 `tests/agent.test.ts` 覆盖了三个行为：
+测试文件 [`tests/agent.test.ts`](https://github.com/dctongsheng/mini-hermes-agent-tutorial/blob/main/examples/mini-hermes-agent/tests/agent.test.ts) 覆盖了三个行为：
 
 - 工具 schema 是 strict 的。
 - 记忆以冻结快照形式进入 System Prompt。

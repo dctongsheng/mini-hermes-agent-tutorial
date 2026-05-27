@@ -2,6 +2,8 @@
 
 本教程主要参考以下资料，并做了教学化重组。阅读源码时建议优先看官方文档，再看具体文件。
 
+本教程自己的配套源码在 [GitHub: dctongsheng/mini-hermes-agent-tutorial](https://github.com/dctongsheng/mini-hermes-agent-tutorial)。下面的外部资料用于解释 Hermes Agent、Function Calling、MCP 和 VitePress 的设计来源。
+
 ## Hermes / Nous 资料
 
 | 资料 | 用途 |

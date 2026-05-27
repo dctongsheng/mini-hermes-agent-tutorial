@@ -1,12 +1,14 @@
 # Hermes Agent 的原理与实现：从零到一实现一个 mini Hermes Agent
 
-这套教程的目标不是“读一遍 Hermes 源码”。真正要学会的是：一个能行动、能记忆、能规划的 Agent，究竟由哪些工程模块拼出来；每个模块解决什么问题；为什么不能只靠一个大 Prompt 硬撑。
+这套教程的目标不是“读一遍 Hermes 源码”。真正要学会的是：一个能行动、能记忆、能规划的 Agent，究竟由哪些工程模块拼出来；每个模块解决什么问题；为什么不能只靠一个大 Prompt 硬撑。配套源码已经放在 [GitHub 仓库 dctongsheng/mini-hermes-agent-tutorial](https://github.com/dctongsheng/mini-hermes-agent-tutorial)，阅读每一章时都可以把文档和仓库代码并排打开。
 
-我们会参考 Nous Research 的 Hermes Agent、Hermes Function Calling 模板、Hermes 3/4 技术报告，以及 OpenAI function calling 的通用接口，把复杂系统压缩成一个适合本科毕业生和初级开发者复现的教学版项目。
+我们会参考 Nous Research 的 Hermes Agent、Hermes Function Calling 模板、Hermes 3/4 技术报告，以及 OpenAI function calling 的通用接口，把复杂系统压缩成一个适合本科毕业生和初级开发者复现的教学版项目。教程中的 mini 实现不是伪代码，你可以直接在 [GitHub 上查看完整目录](https://github.com/dctongsheng/mini-hermes-agent-tutorial/tree/main/examples/mini-hermes-agent)。
+
+![Mini Hermes Agent](/images/minihermes.png)
 
 ## 你会做出什么
 
-最终项目在 `examples/mini-hermes-agent`：
+最终项目在 [`examples/mini-hermes-agent`](https://github.com/dctongsheng/mini-hermes-agent-tutorial/tree/main/examples/mini-hermes-agent)：
 
 - 前端：React + Vite，显示用户消息、最终回答、工具调用轨迹。
 - 后端：Node.js + Express + TypeScript，暴露 `/api/chat`。
@@ -48,3 +50,5 @@ npm run demo
 ```
 
 默认 demo 不需要 API Key。它会用 Mock LLM 模拟工具调用，帮助你看清 Agent Loop 的骨架。
+
+如果你想直接从仓库开始，可以打开 [README](https://github.com/dctongsheng/mini-hermes-agent-tutorial#readme) 查看安装、运行、真实模型配置和核心文件入口。

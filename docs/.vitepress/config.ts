@@ -11,7 +11,8 @@ export default defineConfig({
       { text: '原理', link: '/guide/01-what-is-hermes' },
       { text: 'Demo', link: '/demo/01-toy-tool-call' },
       { text: 'Mini 项目', link: '/project/01-architecture' },
-      { text: '资料', link: '/reference/sources' }
+      { text: '资料', link: '/reference/sources' },
+      { text: 'GitHub', link: 'https://github.com/dctongsheng/mini-hermes-agent-tutorial' }
     ],
     sidebar: [
       {
@@ -48,7 +49,7 @@ export default defineConfig({
       }
     ],
     outline: [2, 3],
-    socialLinks: [{ icon: 'github', link: 'https://github.com/NousResearch/hermes-agent' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/dctongsheng/mini-hermes-agent-tutorial' }]
   },
   markdown: {
     lineNumbers: true

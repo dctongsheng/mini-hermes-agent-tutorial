@@ -8,6 +8,13 @@
 npm install
 ```
 
+如果你还没有代码，可以先克隆 GitHub 仓库：
+
+```bash
+git clone https://github.com/dctongsheng/mini-hermes-agent-tutorial.git
+cd mini-hermes-agent-tutorial
+```
+
 ## 启动教程站点
 
 ```bash
@@ -28,6 +35,8 @@ npm run demo
 - React UI：`http://localhost:5175`
 
 没有配置 API Key 时，后端使用 `MockPlannerProvider`，仍然可以看到完整工具调用链路。
+
+真实模型配置、端口说明和核心文件入口也同步维护在 GitHub 的 [README](https://github.com/dctongsheng/mini-hermes-agent-tutorial#readme) 中。
 
 ## 使用真实模型
 
