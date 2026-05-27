@@ -1,0 +1,27 @@
+{
+  "name": "mini-hermes-agent-tutorial",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "examples/mini-hermes-agent"
+  ],
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 0.0.0.0",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 0.0.0.0",
+    "demo": "npm --workspace mini-hermes-agent run dev",
+    "demo:server": "npm --workspace mini-hermes-agent run dev:server",
+    "demo:client": "npm --workspace mini-hermes-agent run dev:client",
+    "test": "npm --workspace mini-hermes-agent run test"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "mermaid": "^11.12.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7",
+    "vitepress": "^1.6.4",
+    "vitest": "^4.0.16"
+  }
+}

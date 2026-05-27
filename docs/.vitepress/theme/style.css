@@ -1,0 +1,18 @@
+.mermaid-rendered {
+  margin: 20px 0;
+  overflow-x: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.mermaid-rendered svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.VPDoc table {
+  display: table;
+  width: 100%;
+}
